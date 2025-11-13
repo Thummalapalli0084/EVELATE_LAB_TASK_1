@@ -1,0 +1,43 @@
+Steps Performed
+
+Imported Libraries
+
+import pandas as pd
+
+
+Loaded the Dataset
+
+mall_data = pd.read_csv("Mall_Customers.csv")
+
+
+Viewed the Data
+
+Used .head() to see the first few rows.
+
+Checked Shape of Dataset
+
+200 rows × 5 columns
+
+Checked for Missing Values
+
+No null values found (mall_data.isnull().sum() returned 0 for all columns)
+
+Checked for Duplicates
+
+No duplicate rows found (mall_data.duplicated().sum() = 0)
+
+Checked Data Types
+
+CustomerID, Age, Annual Income (k$), Spending Score (1-100) → int64
+
+Gender → object
+
+Data types are appropriate.
+
+Categorical Columns Check
+
+Identified Gender as the only categorical feature.
+
+Final Dataset
+
+Clean and ready for further analysis.
