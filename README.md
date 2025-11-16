@@ -1,77 +1,53 @@
-# 🧹 Data Cleaning and Preprocessing – Task 1
+# Zara Clothing Sales Analysis -- Power BI Dashboard
 
-## 📁 Dataset Used
-**Mall Customer Segmentation Data**
+## 📌 Project Overview
 
-- **Rows:** 200  
-- **Columns:** 5  
-- **Source:** [Kaggle](https://www.kaggle.com/)  
-- **Columns:** `CustomerID`, `Gender`, `Age`, `Annual Income (k$)`, `Spending Score (1-100)`
+This project analyzes Zara's clothing sales data using Power BI. It
+includes data cleaning, transformation, modeling, and storytelling
+through interactive visualizations.
 
----
+------------------------------------------------------------------------
 
-## 🧰 Tools and Libraries
-- **Language:** Python  
-- **Libraries Used:**  
-  - `pandas`
+## 🛠️ Data Cleaning (Power Query)
 
----
+-   Checked for null values (none found)
+-   Verified and corrected data types
+-   Converted date fields into Date format
+-   Converted price column into USD currency format
+-   Removed unnecessary columns such as URL, Name, and Time
 
-## 🧼 Steps Performed
+------------------------------------------------------------------------
 
-### 1. Imported Libraries
-```python
-import pandas as pd
+## 📊 Visualizations Used
 
-### 2. Loaded the Dataset
-mall_data = pd.read_csv("Mall_Customers.csv")
+-   **Bar Chart** → Category-wise sales (Jeans, Jackets, T-Shirts, etc.)
+-   **Price Slicer** → Used to analyze which price range is most
+    preferred
+-   **Pie Chart** → Sales share by clothing category
+-   **Table/Matrix** → Breakdown by price segment, seasonal, and
+    promotional trends
+-   **Text Cards** → Headings and key KPIs
 
-### 3. Viewed the Data
+------------------------------------------------------------------------
 
-Used .head() to view the first few rows.
+## 📈 Key Insights
 
-### 4.Checked Shape of Dataset
-200 rows × 5 columns
-### 5. Checked for Missing Values
+-   Men buy more clothes compared to women
+-   Jackets are the highest-selling category
+-   Mid-range priced items are purchased the most
 
-No null values found.
-mall_data.isnull().sum()
-# Output: 0 for all columns
+------------------------------------------------------------------------
 
-### 6. Checked for Duplicates
+## 📝 Conclusion
 
-No duplicate rows found.
-mall_data.duplicated().sum()
-# Output: 0
+The dashboard provides clear insights into customer behavior and sales
+trends.\
+These insights help Zara improve inventory planning, pricing strategies,
+and marketing decisions.
 
-### 7. Checked Data Types
-Column	Data Type
-CustomerID	int64
-Gender	object
-Age	int64
-Annual Income (k$)	int64
-Spending Score (1-100)	int64
+------------------------------------------------------------------------
 
-All data types are appropriate.
+## 📁 Files Included
 
-### 8. Categorical Columns Check
-
-Identified Gender as the only categorical feature.
-
-
-### ✅ Final Dataset
-
-- Data is clean and ready for further analysis.
-
-- No missing or duplicate values.
-
-- All columns have correct data types.
-
-- Dataset is consistent and analysis-ready.
-
-### 📊 Summary of Changes
-
-✔ Verified data quality
-✔ Confirmed no missing or duplicate values
-✔ Ensured all columns have correct data types
-✔ Dataset is clean and consistent
+-   `Zara_Clothing_Sales_Report.pdf`
+-   `README.md` (this file)
